@@ -87,7 +87,7 @@ passport.deserializeUser(User.deserializeUser());
 
 //root route '/'
 app.get('/', (req, res) => {
-    res.send('hii.. im root.. !')
+    res.redirect('/listings')
 })
 
 //local variables..connect-flash
