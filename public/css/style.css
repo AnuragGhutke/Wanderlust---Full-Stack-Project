@@ -1,0 +1,240 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+h3 {
+    margin: 2rem 0;
+}
+
+/* Navbar */
+.navbar {
+    height: 6.5rem;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span {
+    font-size: 1.6rem;
+}
+
+
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2.1rem;
+    margin-left: 0.5rem;
+}
+
+.nav-link {
+    color: #222;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Footer */
+.f-info {
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+    background-color: rgba(247, 247, 247, 0.733);
+}
+
+.f-info-socials a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #00000085;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+
+}
+
+/* cards */
+.card {
+
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.listing-link {
+
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* Update */
+.add-btn {
+    background-color: #fe424d;
+    color: white;
+    border: none;
+}
+
+/* Show */
+.show-img {
+    height: 30vh;
+}
+
+/* Edit */
+.update-btn {
+    background-color: #fe424d;
+    border: none;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.edit-btn {
+    background-color: #fe424d;
+    border: none;
+}
+
+.show-card {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/* review card */
+.review-card {
+    border: 1px solid rgba(255, 0, 0, 0.135);
+}
+
+/* edit img */
+.editImg img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 6px;
+}
+
+.loginBtn {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+
+#filters {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 22px;
+}
+
+.filter {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+    transition: all 0.1s ease-in;
+}
+
+.filter:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+
+.filter i {
+    font-size: 22px;
+}
+
+.filter p {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.tax-info {
+    color: #002b5c;
+    display: none;
+}
+
+.tax-toggle {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.176);
+    border-radius: 1rem;
+    padding: 1rem 1.4rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.navbar-nav.search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-form {
+    position: relative;
+    width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    height: 50px;
+    padding-right: 100px;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.search-btn {
+    background-color: #fe424d;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+}
+
+.search-btn:hover {
+    background-color: #fe424d;
+}
+
+.search-btn i {
+    color: white;
+    margin-left: -2px;
+}
