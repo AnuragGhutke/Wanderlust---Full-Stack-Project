@@ -2,97 +2,109 @@
 
     <!-- icons -->
     <!-- 1 -->
-    <div id="filters">
-        <div class="filter">
-            <div><i class="fa-solid fa-fire-flame-curved"></i></i></div>
-            <p>Trending</p>
-        </div>
+    <div class="filters swiper">
+        <div class="swiper-wrapper">
 
 
-        <!-- 2 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-wheat-awn"></i></div>
-            <p>Farms</p>
-        </div>
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-fire-flame-curved"></i></div>
+                <p>Trending</p>
+            </div>
 
 
-        <!-- 3 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-hotel"></i></div>
-            <p>Rooms</p>
-        </div>
-
-        <!-- 4 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-city"></i></div>
-            <p>Iconic cities</p>
-        </div>
-
-        <!-- 5 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-umbrella-beach"></i></div>
-            <p>Beach</p>
-        </div>
-
-        <!-- 6 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-mountain"></i></div>
-            <p>Amazing views</p>
-        </div>
-
-        <!-- 7 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-house-laptop"></i></div>
-            <p>Cabins</p>
-        </div>
-
-        <!-- 8 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-water-ladder"></i></div>
-            <p>Amazing pools</p>
-        </div>
-
-        <!-- 9 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-gamepad"></i></div>
-            <p>Gaming house</p>
-        </div>
-
-        <!-- 10 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-place-of-worship"></i></div>
-            <p>Place of worship</p>
-        </div>
+            <!-- 2 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-wheat-awn"></i></div>
+                <p>Farms</p>
+            </div>
 
 
-        <!-- 11 -->
-        <div class="filter">
-            <div><i class="fa-solid fa-mountain-city"></i></div>
-            <p>Mountain city</p>
-        </div>
+            <!-- 3 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-hotel"></i></div>
+                <p>Rooms</p>
+            </div>
+
+            <!-- 4 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-city"></i></div>
+                <p>Iconic cities</p>
+            </div>
+
+            <!-- 5 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-umbrella-beach"></i></div>
+                <p>Beach</p>
+            </div>
+
+            <!-- 6 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-mountain"></i></div>
+                <p>Amazing views</p>
+            </div>
+
+            <!-- 7 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-house-laptop"></i></div>
+                <p>Cabins</p>
+            </div>
+
+            <!-- 8 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-water-ladder"></i></div>
+                <p>Amazing pools</p>
+            </div>
+
+            <!-- 9 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-gamepad"></i></div>
+                <p>Gaming house</p>
+            </div>
+
+            <!-- 10 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-place-of-worship"></i></div>
+                <p>Place of worship</p>
+            </div>
 
 
-        <!-- 12 -->
-        <div class="filter">
-            <div><i class="fa-regular fa-snowflake"></i></div>
-            <p>Arctic</p>
-        </div>
+            <!-- 11 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-solid fa-mountain-city"></i></div>
+                <p>Mountain city</p>
+            </div>
 
-        <!-- tax toggle -->
-        <div class="tax-toggle">
-            <div class="form-check-reverse form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-                <label class="form-check-label" for="switchCheckDefault">Display taxes</label>
+
+            <!-- 12 -->
+            <div class="filter swiper-slide">
+                <div><i class="fa-regular fa-snowflake"></i></div>
+                <p>Arctic</p>
             </div>
         </div>
 
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- swiper arrows -->
+        <div class="swiper-slide-button swiper-button-next"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+
+
     </div>
+    <!-- tax toggle -->
+    <!-- <div class="tax-toggle">
+        <div class="form-check-reverse form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+            <label class="form-check-label" for="switchCheckDefault">Display taxes</label>
+        </div>
+    </div> -->
+
+
 
 
 
 
     <!-- all listing cards -->
-    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1 mt-3">
 
         <% for(let listing of allListings) { %>
 

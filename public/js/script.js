@@ -17,15 +17,46 @@
     })
 })()
 
-//tax switch
-let taxSwitch = document.getElementById('switchCheckDefault');
-let taxInfo = document.querySelectorAll('.tax-info')
-taxSwitch.addEventListener('click', (e) => {
-    for (info of taxInfo) {
-        if (info.style.display !== 'inline') {
-            info.style.display = 'inline';
-        } else {
-            info.style.display = 'none';
+// //tax switch
+// let taxSwitch = document.getElementById('switchCheckDefault');
+// let taxInfo = document.querySelectorAll('.tax-info')
+// taxSwitch.addEventListener('click', (e) => {
+//     for (info of taxInfo) {
+//         if (info.style.display !== 'inline') {
+//             info.style.display = 'inline';
+//         } else {
+//             info.style.display = 'none';
+//         }
+//     }
+// })
+
+const swiper = new Swiper('.filters', {
+    slidesPerView: 8,
+    spaceBetween: 15,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    grabCursor: true,
+
+    // pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    //Responsiveness
+    breakpoints: {
+        0: {
+            slidesPerView: 4
+        },
+        768: {
+            slidesPerView: 6
+        },
+        1024: {
+            slidesPerView: 8
         }
-    }
-})
+    },
+});
+

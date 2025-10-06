@@ -85,20 +85,20 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());//stores user info in session
 passport.deserializeUser(User.deserializeUser());
 
-//root route '/'
-app.get('/', (req, res) => {
-    res.redirect('/listings')
-})
-
 //local variables..connect-flash
 app.use((req, res, next) => {
-    res.locals.success = req.flash('success');
-    res.locals.error = req.flash('error');
-    res.locals.currUser = req.user;
+    res.locals.success = req.flash('success') || null;
+    res.locals.error = req.flash('error') || null;
+    res.locals.currUser = req.user || null;
     next();
 })
 
-//all routes 
+
+//root route
+app.get('/', (req, res) => {
+    res.redirect('/listings')
+})
+//all routes
 app.use('/listings', listingRoutes);
 app.use('/listings/:id/reviews', reviewRoutes);
 app.use('/', userRoutes);

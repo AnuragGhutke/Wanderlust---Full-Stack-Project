@@ -1,7 +1,12 @@
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+
     <div class="container-fluid">
-        <a class="navbar-brand" href="/listings"><i
-                class="fa-regular fa-compass me-2"></i><span><b>Wanderlust</b></span></a>
+
+        <a class="navbar-brand" href="/listings">
+            <i class="fa-regular fa-compass me-2"></i>
+            <span><b>Wanderlust</b></span></a>
+
+        <!-- navbar btn -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
 
             <span class="navbar-toggler-icon"></span>
@@ -9,6 +14,7 @@
 
         <!-- menu items -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
             <div class="navbar-nav">
                 <a class="nav-link ms-auto" href="/listings">Explore</a>
 
@@ -16,15 +22,19 @@
 
             <!-- search -->
             <div class="navbar-nav search">
+
                 <form class="d-flex serach-form" role="search">
 
-                    <!-- searchbox -->
-                    <input class="form-control me-2 search-input" type="search" placeholder="Search destination..."
-                        aria-label="Search" />
+                    <div class="search-wrapper">
 
-                    <!-- serach-btn -->
-                    <button class="btn btn-outline-success search-btn" type="submit"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
+                        <!-- searchbox -->
+                        <input class="form-control me-2 search-input" type="search" placeholder="Search destination..."
+                            aria-label="Search" />
+
+                        <!-- serach-btn -->
+                        <button class="btn btn-outline-success search-btn" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
 
                 </form>
             </div>
@@ -35,7 +45,7 @@
                 <a class="nav-link me-2" href="/listings/new">New listings</a>
 
                 <!-- login -->
-                <% if(!currUser){ %>
+                <% if (typeof currUser==='undefined' || !currUser) { %>
                     <a class="btn btn-dark me-3" href="/login">Login</a>
 
                     <!-- signup -->
@@ -43,7 +53,7 @@
                     <% } %>
 
                         <!-- logout -->
-                        <% if(currUser){ %>
+                        <% if (typeof currUser !=='undefined' && currUser) { %>
                             <a class="btn btn-danger me-3" href="/logout">Logout</a>
                             <% } %>
 
